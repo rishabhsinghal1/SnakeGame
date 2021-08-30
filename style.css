@@ -1,0 +1,42 @@
+
+
+ body {
+  background-color:rgb(179, 228, 64);
+ 
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+    
+} 
+#in {
+  display: inline-block;
+  vertical-align: top;
+}
+.container {
+    height: 7in;
+    width: 7in;
+    background: linear-gradient(rgb(181, 240, 181),rgb(226, 226, 163));
+    margin-top: 20px;
+    margin-left: 200px;
+    border: solid black 2px;
+}
+.scores {  
+  
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 2in;
+  height: 1in;
+  padding: 2px;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#snakeimg {
+  margin-left: 40px;
+  margin-top: 70px;
+     width: 500px;
+     height:500px;
+     /* background-color: yellow;  */
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-image: url("./media/pngegg.png");
+}
