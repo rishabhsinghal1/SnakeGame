@@ -1,14 +1,10 @@
 
 body {
   background-color:rgb(93, 103, 241);
-  min-height: 100vh;
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat;
 } 
 .display
 {
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
 }
 #board {
     display: grid;
@@ -17,24 +13,33 @@ body {
 
     height: 92vmin;
     width: 90vmin;
-    background: linear-gradient(rgb(133, 181, 243),rgb(5, 75, 75));
-    margin-top: 20px;
+    background: linear-gradient(rgb(131, 248, 180),rgb(224, 240, 180));
+    margin-top: 0px;
     margin-left: 200px;
-    border: solid transparent 10px; 
-    border-image: url("./media/border.png") 15 round;
+    border: solid black 1px; 
 }
-#scores {  
-  margin-top: 20px;
-  margin-left: 20px;
-  width: 2in;
-  height: 1in;
-  padding: 2px;
-  font-size: 30px;
-  font-family: 'Times New Roman', Times, serif;
+#score
+{  
+  position: absolute;
+  top: 9px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  right: 440px;
+  font-size: 39px;
+  font-weight: bold;
 }
-#snakeimg {
-  margin-left: 40px;
-  margin-top: 70px;
+#highScore
+{  
+  position: absolute;
+  top: 50px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  right: 350px;
+  font-size: 39px;
+  font-weight: bold;
+}
+#snakeimg
+ {
+    margin-top: 170px;
+     margin-left: 40px;
      width: 500px;
      height:500px;
      background-size: contain;
@@ -43,18 +48,16 @@ body {
 }
 .snake
 {
-  background-color: greenyellow;
-  border-radius: 9px;
+  background-color: green;
+  border-radius: 20px;
 }
 .head
 {
-  background-image: url("./media/kisspng-snake-red-game-without-a-great-name-puzzle-video-g-snake-cartoon-5a78349db78fa3.3414221815178272297519.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-color:indigo;
+  border-radius: 13px;
 }
 .food
 {
-  background-image: url("./media/frog_PNG35719.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(247, 0, 12);
+  border-radius: 13px;
 }
