@@ -12,7 +12,7 @@ let lastPaintTime = 0;
 let score = 0;
 let hscore = 0;
 
-//music.play();
+music.play();
 let snakeArr = [
     {x: 13, y: 15}
 ];
